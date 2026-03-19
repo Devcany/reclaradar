@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "reklamations_nr": "RK-2026-00417",
+    "datum": "2026-03-12",
+    "prioritaet": "Hoch",
+    "status": "Offen",
+    "typ": "Externe Kundenreklamation"
+  },
+  "kunde": {
+    "firma": "Hoffmann Automotive GmbH",
+    "ansprechpartner": "Dipl.-Ing. Stefan Brückner",
+    "position": "Leiter Qualitätssicherung",
+    "email": "s.brueckner@hoffmann-automotive.de",
+    "telefon": "+49 5321 9988-140",
+    "adresse": "Industriestraße 22, 38644 Goslar"
+  },
+  "lieferant": {
+    "firma": "Müller Präzisionsteile GmbH",
+    "standort": "Werk Detmold",
+    "ansprechpartner": "Thomas Krause",
+    "position": "Qualitätsmanager",
+    "email": "t.krause@mueller-praezision.de",
+    "telefon": "+49 5231 7744-200"
+  },
+  "betroffenes_produkt": {
+    "bezeichnung": "Steckverbinder-Gehäuse Typ SG-4200",
+    "sachnummer": "MP-SG4200-Rev03",
+    "charge": "CH-2026-0088",
+    "lieferschein_nr": "LS-2026-03041",
+    "lieferdatum": "2026-03-05",
+    "bestellmenge": 5000,
+    "betroffene_menge": 312,
+    "pruefmethode": "Sichtprüfung + Maßprüfung (Koordinatenmessgerät)"
+  },
+  "fehlerbeschreibung": {
+    "kurzbeschreibung": "Maßabweichung an Rastnasen, Gehäuse lässt sich nicht korrekt verriegeln",
+    "detailbeschreibung": "Bei der Wareneingangsprüfung der Charge CH-2026-0088 wurde festgestellt, dass bei 312 von 500 geprüften Steckverbinder-Gehäusen Typ SG-4200 die Rastnasen eine Maßabweichung von +0,18 mm bis +0,25 mm aufweisen (Toleranz: ±0,05 mm gemäß Zeichnung MP-SG4200-Rev03-DWG). Die betroffenen Gehäuse lassen sich nicht korrekt mit dem Gegenstück (Buchsenleiste BL-4200) verriegeln. Ein spürbares Spiel bleibt nach dem Einrasten bestehen. Bei Vibrationsbelastung (gemäß LV 124, Profil 3) lösen sich die Verbindungen nach durchschnittlich 4,2 Stunden (Anforderung: min. 72 Stunden).",
+    "fehlerart": "Maßabweichung / Fertigungsfehler",
+    "fehlerort": "Rastnase links + rechts, Position gemäß Zeichnung Pos. 4a/4b",
+    "erstentdeckung": "Wareneingangsprüfung",
+    "auswirkung_kunde": "Produktionsstopp Linie 3 (Kabelbaumfertigung) seit 2026-03-10. Tagesausfall ca. 1.200 Kabelsätze. Endkunde (OEM) wurde informiert. Sonderfahrt mit Ersatzlieferung aus Altbestand erforderlich."
+  },
+  "sofortmassnahmen_kunde": [
+    "Sperrung der gesamten Charge CH-2026-0088 im Lager",
+    "100%-Prüfung der bereits verbauten Teile aus gleicher Charge (Linie 1 + 2)",
+    "Rückstellung von 20 Musterteilen für Lieferanten-Analyse",
+    "Umstellung auf Alternativlieferant (Charge AL-2026-0091) ab 2026-03-11",
+    "Information an OEM-Qualitätsabteilung (Eskalationsstufe 2)"
+  ],
+  "forderungen": {
+    "8d_report_frist": "2026-03-26 (10 Arbeitstage)",
+    "nachlieferung": "4.700 Stück i.O.-Teile bis spätestens 2026-03-19",
+    "kostenuebernahme": [
+      "Sortierkosten: geschätzt 3.400 EUR",
+      "Produktionsausfall Linie 3: geschätzt 18.000 EUR/Tag × 2 Tage = 36.000 EUR",
+      "Sonderfahrt Ersatzlieferung: 1.200 EUR",
+      "Prüfkosten Koordinatenmessgerät (extern): 850 EUR"
+    ],
+    "gesamt_schadenssumme_geschaetzt": "41.450 EUR"
+  },
+  "anlagen": [
+    "Prüfbericht WE-2026-03041 (Koordinatenmessgerät, 12 Seiten)",
+    "Fotos Rastnasen-Vergleich i.O. vs. n.i.O. (8 Bilder)",
+    "Zeichnung MP-SG4200-Rev03-DWG (Auszug Pos. 4a/4b)",
+    "Lieferschein LS-2026-03041 (Kopie)",
+    "Vibrationstestprotokoll gemäß LV 124 Profil 3"
+  ]
+}

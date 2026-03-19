@@ -1,0 +1,159 @@
+{
+  "report_meta": {
+    "reklamations_nr": "RK-2026-00417",
+    "erstelldatum": "2026-03-12",
+    "produkt": "Steckverbinder-Gehäuse Typ SG-4200",
+    "lieferant": "Müller Präzisionsteile GmbH",
+    "kunde": "Hoffmann Automotive GmbH"
+  },
+  "d1_team": {
+    "status": "PLATZHALTER",
+    "titel": "Team-Zusammenstellung",
+    "inhalt": "Interdisziplinäres 8D-Team mit Vertretern aus Qualität, Fertigung, Konstruktion und Kundendienst zusammenstellen",
+    "hinweis": "Team muss mindestens folgende Rollen enthalten: Teamleiter (QM), Fertigungsexperte, Messtechnik-Spezialist, Prozessingenieur. Namen, Funktionen und Verantwortlichkeiten definieren."
+  },
+  "d2_problembeschreibung": {
+    "status": "KI_GENERIERT",
+    "titel": "Problembeschreibung",
+    "ist_zustand": "Rastnasen an Steckverbinder-Gehäuse SG-4200 (Pos. 4a/4b) weisen Maßabweichung von +0,18 bis +0,25 mm auf. 312 von 500 geprüften Teilen aus Charge CH-2026-0088 betroffen.",
+    "soll_zustand": "Rastnasen müssen gemäß Zeichnung MP-SG4200-Rev03-DWG Toleranz ±0,05 mm einhalten für sichere Verriegelung mit Buchsenleiste BL-4200",
+    "abweichung": "Überschreitung der Obergrenze um +0,13 bis +0,20 mm (260% bis 400% der Toleranz)",
+    "betroffene_menge": "312 Teile n.i.O. von 500 geprüften (62,4% Ausschussrate), Gesamtcharge: 5.000 Stück",
+    "auswirkung": "Unzureichende Verriegelung, Vibrationsbeständigkeit nur 4,2h statt geforderte 72h (LV 124), Produktionsstopp Linie 3, OEM-Eskalation"
+  },
+  "d3_sofortmassnahmen": {
+    "status": "KI_GENERIERT",
+    "titel": "Sofort- und Eindämmungsmaßnahmen",
+    "massnahmen": [
+      {
+        "nr": 1,
+        "massnahme": "Sperrung aller Lagerbestände Charge CH-2026-0088 und vorhergehende Charge CH-2026-0087 zur Risikoabschätzung",
+        "verantwortlich": "Lagerleitung / QS",
+        "termin": "Sofort umgesetzt",
+        "status_vorschlag": "ABGESCHLOSSEN"
+      },
+      {
+        "nr": 2,
+        "massnahme": "100%-Prüfung aller SG-4200 Teile ab Charge CH-2026-0080 mit Koordinatenmessgerät (Pos. 4a/4b)",
+        "verantwortlich": "Qualitätsprüfung",
+        "termin": "2026-03-14",
+        "status_vorschlag": "LAUFEND"
+      },
+      {
+        "nr": 3,
+        "massnahme": "Produktionsstopp für SG-4200 bis Grundursache geklärt, Werkzeugsperre für Formnest 4a/4b",
+        "verantwortlich": "Fertigungsleitung",
+        "termin": "Sofort umgesetzt",
+        "status_vorschlag": "ABGESCHLOSSEN"
+      },
+      {
+        "nr": 4,
+        "massnahme": "Eillieferung 4.700 Stück aus qualifizierten Ersatzwerkzeugen bis 2026-03-19",
+        "verantwortlich": "Produktionsplanung",
+        "termin": "2026-03-19",
+        "status_vorschlag": "LAUFEND"
+      }
+    ]
+  },
+  "d4_grundursache": {
+    "status": "KI_GENERIERT",
+    "titel": "Grundursachenanalyse",
+    "methode": "Ishikawa-Diagramm kombiniert mit 5-Why-Analyse für Spritzgussprozess",
+    "moegliche_ursachen": [
+      {
+        "kategorie": "Werkzeug/Maschine",
+        "ursache": "Werkzeugverschleiß an Formnest 4a/4b durch hohe Stückzahlen ohne planmäßige Revision",
+        "bewertung": "Hoch - Sichtprüfung Formkontur erforderlich"
+      },
+      {
+        "kategorie": "Prozess",
+        "ursache": "Erhöhung des Spritzdrucks in KW 09/2026 ohne Anpassung der Prozessparameter-Dokumentation",
+        "bewertung": "Hoch - Maschinendaten prüfen"
+      },
+      {
+        "kategorie": "Material",
+        "ursache": "Abweichende Schmelzeviskosität des PA6-GF30 Materials (Charge M-2026-033)",
+        "bewertung": "Mittel - Materialzertifikat prüfen"
+      },
+      {
+        "kategorie": "Mensch",
+        "ursache": "Fehlende SPC-Überwachung der kritischen Rastnasen-Maße seit Personalwechsel",
+        "bewertung": "Mittel - Prüfplan-Einhaltung prüfen"
+      }
+    ],
+    "wahrscheinlichste_grundursache": "Kombination aus Werkzeugverschleiß (Formnest 4a/4b) und erhöhtem Spritzdruck ohne entsprechende Prozessanpassung",
+    "begruendung": "Zeitliche Korrelation: Druckerhöhung KW 09, erste Reklamation KW 10. Verschleiß erklärt schleichende Verschlechterung der Maßhaltigkeit bei kritischen Konturen."
+  },
+  "d5_abstellmassnahmen": {
+    "status": "KI_GENERIERT",
+    "titel": "Dauerhafte Abstellmaßnahmen",
+    "massnahmen": [
+      {
+        "nr": 1,
+        "massnahme": "Sofortige Werkzeuginstandsetzung: Neuerodierung Formnest 4a/4b mit Aufmaß 0,02 mm, anschließend Präzisions-Nachbearbeitung",
+        "verantwortlich": "Werkzeugbau / Instandhaltung",
+        "termin": "2026-03-20",
+        "nachweis": "Werkzeug-Freigabeprotokoll mit Erstmusterprüfung (20 Stück)"
+      },
+      {
+        "nr": 2,
+        "massnahme": "Implementierung SPC für Rastnasen-Maße: Messung jede 50. Teile mit Lehren, Cpk-Ziel ≥1,67",
+        "verantwortlich": "Qualitätssicherung / Fertigung",
+        "termin": "2026-03-25",
+        "nachweis": "SPC-Karten aktiv, Maschinenbediener geschult, Q-Audit bestanden"
+      },
+      {
+        "nr": 3,
+        "massnahme": "Überarbeitung Spritzgussparameter: Druckreduzierung auf Ausgangswert, Nachdruck-Optimierung über DoE-Versuch",
+        "verantwortlich": "Prozessingenieur",
+        "termin": "2026-03-18",
+        "nachweis": "Neue Prozessparameter-Dokumentation freigegeben, Bediener-Schulung durchgeführt"
+      },
+      {
+        "nr": 4,
+        "massnahme": "Präventive Werkzeug-Wartungsintervalle: Revision alle 200.000 Teile statt bisher 350.000",
+        "verantwortlich": "Instandhaltungsplanung",
+        "termin": "2026-03-30",
+        "nachweis": "SAP-PM System mit automatischen Wartungsaufträgen konfiguriert"
+      }
+    ]
+  },
+  "d6_wirksamkeit": {
+    "status": "PLATZHALTER",
+    "titel": "Wirksamkeitsnachweis",
+    "inhalt": "Nachweis der Wirksamkeit aller Abstellmaßnahmen durch Langzeittests und Prozessfähigkeitsstudien",
+    "hinweis": "Durchführen: 4-Wochen-Produktionsüberwachung mit täglicher SPC-Auswertung, Cpk-Studie über 300 Teile, Vibrationstests gemäß LV 124 an 20 Stichproben, Kundenmuster-Freigabe erforderlich."
+  },
+  "d7_vorbeugung": {
+    "status": "KI_GENERIERT",
+    "titel": "Vorbeugemaßnahmen",
+    "massnahmen": [
+      {
+        "nr": 1,
+        "massnahme": "FMEA-Update: Aufnahme 'Werkzeugverschleiß kritische Konturen' mit RPN-Neubewertung und präventiven Maßnahmen",
+        "bezug": "Design-FMEA MP-SG4200-Rev03, Position Rastnasen",
+        "umsetzung": "RPN von 48 auf 16 durch präventive Wartung und SPC"
+      },
+      {
+        "nr": 2,
+        "massnahme": "Einführung Poka-Yoke: Automatische Lehrenprüfung Rastnasen alle 25 Teile mit direkter Maschinenanbindung",
+        "bezug": "Spritzgussanlage SP-2400, Station Entnahme",
+        "umsetzung": "Pneumatische Prüflehre mit NOT-STOP bei Überschreitung i.O.-Bereich"
+      },
+      {
+        "nr": 3,
+        "massnahme": "Schulungsmatrix erweitern: Spritzguss-Spezialschulung für alle Bediener zu kritischen Qualitätsmerkmalen",
+        "bezug": "Personalqualifizierung gemäß ISO/TS 16949",
+        "umsetzung": "Halbjährliche Auffrischung, praktische Übungen am Koordinatenmessgerät"
+      }
+    ],
+    "fmea_update": "FMEA MP-SG4200-Rev03 muss um Failmode 'Rastnasen-Maßabweichung durch Werkzeugverschleiß' erweitert werden. Aktuelle RPN 48 → Ziel RPN 16 durch präventive Wartung.",
+    "lessons_learned": "Kritische Funktionsmaße wie Rastnasen benötigen intensivere SPC-Überwachung. Werkzeug-Wartungsintervalle sind bei hochbelasteten Konturen zu verkürzen. Prozessänderungen müssen immer mit Qualitätsfreigabe erfolgen."
+  },
+  "d8_abschluss": {
+    "status": "PLATZHALTER",
+    "titel": "Abschluss und Teamwürdigung",
+    "inhalt": "Abschließende Bewertung der 8D-Aktivitäten und Anerkennung der Teamleistung",
+    "hinweis": "Nach erfolgreichem Wirksamkeitsnachweis: Zusammenfassung der erreichten Verbesserungen, Kosten-Nutzen-Bilanz, Lessons Learned für zukünftige Projekte, Team-Würdigung durch Management."
+  }
+}

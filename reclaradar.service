@@ -1,0 +1,19 @@
+[Unit]
+Description=ReclaRadar — 8D-Report Generator API
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/reclaradar
+Environment="ANTHROPIC_API_KEY=DEIN_KEY_HIER"
+Environment="RECLARADAR_API_KEY=DEIN_API_KEY_HIER"
+ExecStart=/usr/bin/uvicorn app:app --host 0.0.0.0 --port 8003
+Restart=on-failure
+RestartSec=5s
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=reclaradar
+
+[Install]
+WantedBy=multi-user.target
